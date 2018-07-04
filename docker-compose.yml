@@ -1,0 +1,11 @@
+version: '3.6'
+
+services:
+  web:
+    container_name: metar
+    image: roura/php:apache
+    ports:
+      - 80:80
+    network_mode: bridge
+    volumes:
+      - ./src:/var/www/html
